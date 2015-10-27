@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Efq-xl-wKH">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Compose-->
+        <scene sceneID="eap-fH-pFR">
+            <objects>
+                <viewController id="rMA-0i-Vst" customClass="ComopseViewController" customModule="SDS_Reader" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IyZ-DS-p71"/>
+                        <viewControllerLayoutGuide type="bottom" id="NbL-9J-SGe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pbK-Hd-R9O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="fP9-fv-plo">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="tintColor" red="0.81960784310000001" green="0.0" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fP9-fv-plo" firstAttribute="leading" secondItem="pbK-Hd-R9O" secondAttribute="leading" id="Af1-M7-Wbf"/>
+                            <constraint firstItem="NbL-9J-SGe" firstAttribute="top" secondItem="fP9-fv-plo" secondAttribute="bottom" id="YdP-Sn-sTK"/>
+                            <constraint firstAttribute="trailing" secondItem="fP9-fv-plo" secondAttribute="trailing" id="sHJ-p3-3aY"/>
+                            <constraint firstItem="fP9-fv-plo" firstAttribute="top" secondItem="IyZ-DS-p71" secondAttribute="bottom" id="tBz-yH-k3l"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Compose" id="2SA-PY-kQs">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="stop" id="nhF-tI-jp0">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="HHp-Z7-JR1" kind="unwind" unwindAction="editorExited:" id="1mC-a1-Bnd"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" id="aKY-cC-S09">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="E3m-ZS-4QO">
+                                <rect key="frame" x="319" y="7" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="HHp-Z7-JR1" kind="unwind" unwindAction="editorSaved:" id="DJ2-TT-mgZ"/>
+                                </connections>
+                            </button>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wlV-O0-uj4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="HHp-Z7-JR1" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1077.5" y="517.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xHV-N5-lC9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Efq-xl-wKH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dbd-5w-qMg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.80000000000000004" green="0.0" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rMA-0i-Vst" kind="relationship" relationship="rootViewController" id="HVn-8a-IFa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kUH-35-yiS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="626.5" y="517.5"/>
+        </scene>
+    </scenes>
+</document>

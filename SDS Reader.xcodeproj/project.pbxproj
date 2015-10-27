@@ -1,0 +1,327 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		217B6DE31BB09ED5004397FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217B6DE21BB09ED5004397FA /* AppDelegate.swift */; };
+		217B6DE81BB09ED5004397FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 217B6DE61BB09ED5004397FA /* Main.storyboard */; };
+		217B6DEA1BB09ED5004397FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 217B6DE91BB09ED5004397FA /* Assets.xcassets */; };
+		217B6DED1BB09ED5004397FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 217B6DEB1BB09ED5004397FA /* LaunchScreen.storyboard */; };
+		217B6DF71BB0A3C3004397FA /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217B6DF61BB0A3C3004397FA /* HomeTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		217B6DF91BB0A6A7004397FA /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217B6DF81BB0A6A7004397FA /* HomeTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		217B6DFC1BB0AD7A004397FA /* Compose.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 217B6DFB1BB0AD7A004397FA /* Compose.storyboard */; settings = {ASSET_TAGS = (); }; };
+		21CAAB611BBB2BF200CB35F1 /* ComopseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CAAB601BBB2BF200CB35F1 /* ComopseViewController.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		217B6DDF1BB09ED5004397FA /* SDS Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SDS Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		217B6DE21BB09ED5004397FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		217B6DE71BB09ED5004397FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		217B6DE91BB09ED5004397FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		217B6DEC1BB09ED5004397FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		217B6DEE1BB09ED5004397FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		217B6DF61BB0A3C3004397FA /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		217B6DF81BB0A6A7004397FA /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		217B6DFB1BB0AD7A004397FA /* Compose.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Compose.storyboard; sourceTree = "<group>"; };
+		21CAAB601BBB2BF200CB35F1 /* ComopseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComopseViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		217B6DDC1BB09ED5004397FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		217B6DD61BB09ED5004397FA = {
+			isa = PBXGroup;
+			children = (
+				217B6DE11BB09ED5004397FA /* SDS Reader */,
+				217B6DE01BB09ED5004397FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		217B6DE01BB09ED5004397FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				217B6DDF1BB09ED5004397FA /* SDS Reader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		217B6DE11BB09ED5004397FA /* SDS Reader */ = {
+			isa = PBXGroup;
+			children = (
+				217B6DF41BB0A2F5004397FA /* Modules */,
+				217B6DE21BB09ED5004397FA /* AppDelegate.swift */,
+				217B6DE91BB09ED5004397FA /* Assets.xcassets */,
+				217B6DEB1BB09ED5004397FA /* LaunchScreen.storyboard */,
+				217B6DEE1BB09ED5004397FA /* Info.plist */,
+			);
+			path = "SDS Reader";
+			sourceTree = "<group>";
+		};
+		217B6DF41BB0A2F5004397FA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				217B6DFA1BB0AD44004397FA /* Compose */,
+				217B6DF51BB0A31F004397FA /* Home */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		217B6DF51BB0A31F004397FA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				217B6DE61BB09ED5004397FA /* Main.storyboard */,
+				217B6DF61BB0A3C3004397FA /* HomeTableViewController.swift */,
+				217B6DF81BB0A6A7004397FA /* HomeTableViewCell.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		217B6DFA1BB0AD44004397FA /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				217B6DFB1BB0AD7A004397FA /* Compose.storyboard */,
+				21CAAB601BBB2BF200CB35F1 /* ComopseViewController.swift */,
+			);
+			name = Compose;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		217B6DDE1BB09ED5004397FA /* SDS Reader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 217B6DF11BB09ED5004397FA /* Build configuration list for PBXNativeTarget "SDS Reader" */;
+			buildPhases = (
+				217B6DDB1BB09ED5004397FA /* Sources */,
+				217B6DDC1BB09ED5004397FA /* Frameworks */,
+				217B6DDD1BB09ED5004397FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SDS Reader";
+			productName = "SDS Reader";
+			productReference = 217B6DDF1BB09ED5004397FA /* SDS Reader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		217B6DD71BB09ED5004397FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = SDS;
+				TargetAttributes = {
+					217B6DDE1BB09ED5004397FA = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 217B6DDA1BB09ED5004397FA /* Build configuration list for PBXProject "SDS Reader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 217B6DD61BB09ED5004397FA;
+			productRefGroup = 217B6DE01BB09ED5004397FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				217B6DDE1BB09ED5004397FA /* SDS Reader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		217B6DDD1BB09ED5004397FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				217B6DED1BB09ED5004397FA /* LaunchScreen.storyboard in Resources */,
+				217B6DEA1BB09ED5004397FA /* Assets.xcassets in Resources */,
+				217B6DE81BB09ED5004397FA /* Main.storyboard in Resources */,
+				217B6DFC1BB0AD7A004397FA /* Compose.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		217B6DDB1BB09ED5004397FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				217B6DF91BB0A6A7004397FA /* HomeTableViewCell.swift in Sources */,
+				217B6DF71BB0A3C3004397FA /* HomeTableViewController.swift in Sources */,
+				217B6DE31BB09ED5004397FA /* AppDelegate.swift in Sources */,
+				21CAAB611BBB2BF200CB35F1 /* ComopseViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		217B6DE61BB09ED5004397FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				217B6DE71BB09ED5004397FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		217B6DEB1BB09ED5004397FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				217B6DEC1BB09ED5004397FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		217B6DEF1BB09ED5004397FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		217B6DF01BB09ED5004397FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		217B6DF21BB09ED5004397FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "SDS Reader/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.schdesign.SDS-Reader";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		217B6DF31BB09ED5004397FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "SDS Reader/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.schdesign.SDS-Reader";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		217B6DDA1BB09ED5004397FA /* Build configuration list for PBXProject "SDS Reader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				217B6DEF1BB09ED5004397FA /* Debug */,
+				217B6DF01BB09ED5004397FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		217B6DF11BB09ED5004397FA /* Build configuration list for PBXNativeTarget "SDS Reader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				217B6DF21BB09ED5004397FA /* Debug */,
+				217B6DF31BB09ED5004397FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 217B6DD71BB09ED5004397FA /* Project object */;
+}
