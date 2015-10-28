@@ -26,23 +26,28 @@ class HomeTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return DataManager.sharedManager.articles.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("HomeTableViewCell", forIndexPath: indexPath) as! HomeTableViewCell
-        cell.setupCell(withIndexPath: indexPath)
+        cell.setupCell(withNewsData: DataManager.sharedManager.articles[indexPath.row])
 
         return cell
     }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        DataManager.sharedManager.selectedIndex = indexPath.row
+    }
 
     // MARK: - Navigation
-    @IBAction func editorExited(segue: UIStoryboardSegue){
-        
+    @IBAction func editorExited(segue: UIStoryboardSegue) {
+        DataManager.sharedManager.editingText = nil
     }
     
-    @IBAction func editorSaved(segue: UIStoryboardSegue){
-        
+    @IBAction func editorSaved(segue: UIStoryboardSegue) {
+        DataManager.sharedManager.saveArticle()
+        tableView.reloadData()
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

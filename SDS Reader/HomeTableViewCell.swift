@@ -18,8 +18,9 @@ class HomeTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    func setupCell(withIndexPath path: NSIndexPath){
-        titleLabel.text = "\(path.row)"
+    func setupCell(withNewsData data: NewsData){
+        titleLabel.text = data.title
+        subtitleLabel.text = data.preview
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
