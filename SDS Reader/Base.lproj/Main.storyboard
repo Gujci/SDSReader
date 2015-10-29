@@ -97,7 +97,7 @@
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="compose" id="xfF-PQ-gT3">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="RXf-y3-976" kind="presentation" id="z3Z-Lt-839"/>
+                                <segue destination="RXf-y3-976" kind="presentation" identifier="navigate_to_compose" id="z3Z-Lt-839"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

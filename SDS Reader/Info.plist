@@ -40,5 +40,21 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>open-favorites</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Compose</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>com.schdesign.SDS-Reader.compose</string>
+			<key>UIApplicationShortcutItemUserInfo</key>
+			<dict>
+				<key>key1</key>
+				<string>value1</string>
+			</dict>
+		</dict>
+	</array>
 </dict>
 </plist>

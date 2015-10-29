@@ -13,6 +13,8 @@ class HomeTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.tableFooterView = UIView(frame: CGRectZero)
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "navigateToCompose", name: "NavigateToCompose", object: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,6 +40,11 @@ class HomeTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         DataManager.sharedManager.selectedIndex = indexPath.row
+    }
+    
+    //MARK: - Notification andle methods
+    func navigateToCompose() {
+        self.performSegueWithIdentifier("navigate_to_compose", sender: self)
     }
 
     // MARK: - Navigation
